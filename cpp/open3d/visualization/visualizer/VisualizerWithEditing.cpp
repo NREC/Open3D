@@ -631,7 +631,7 @@ void VisualizerWithEditing::MouseButtonCallback(GLFWwindow *window,
                         ((const geometry::PointCloud &)(*editing_geometry_ptr_))
                                 .points_[index];
                 utility::LogInfo(
-                        "Picked point #{:d} ({:.2}, {:.2}, {:.2}) to add in "
+                        "Picked point #{:d} ({:.4}, {:.4}, {:.4}) to add in "
                         "queue.",
                         index, point(0), point(1), point(2));
                 pointcloud_picker_ptr_->picked_indices_.push_back(
